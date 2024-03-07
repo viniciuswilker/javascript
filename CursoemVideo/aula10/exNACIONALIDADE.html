@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nacionalidade</title>
+    <style>
+
+        body{
+            background-color: rgb(55, 159, 243);
+        }
+    </style>
+</head>
+<body>
+    <h1>Nacionalidades</h1>
+    Digite sua Nacionalidade: <input type="text" id="nas" name="nas">
+    <input type="button" value="Verificar" onclick="calcular()">
+    <div id="res">
+        
+    </div>
+
+    <script>
+
+        function calcular(){
+            nacionalidade = document.getElementById('nas')
+            res = document.getElementById('res')
+            if ( res != Brasil ) {
+                res.innerHTML = 'Você é estrangeiro!'
+                
+            }
+
+
+        }
+
+
+
+
+
+    </script>
+    
+</body>
+</html>
